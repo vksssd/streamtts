@@ -1,0 +1,41 @@
+# Core dependencies (required)
+llama-cpp-python>=0.2.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+piper-tts>=1.2.0
+
+# Optional: Voice input (STT) - for voice_assistant_full.py
+openai-whisper>=20230918
+
+# Optional: Better audio preprocessing
+# noisereduce>=2.0.0
+# webrtcvad>=2.0.0
+
+# Optional: Wake word detection
+# pvporcupine>=2.2.0
+
+# Optional: Emotion detection
+# transformers>=4.30.0
+
+# Optional: RAG support
+# chromadb>=0.4.0
+# sentence-transformers>=2.2.0
+
+# Optional: Alternative TTS (faster)
+# kokoro-tts>=0.1.0
+
+# Development dependencies
+# pytest>=7.0.0
+# black>=23.0.0
+# pylint>=2.17.0
+
+# GPU acceleration instructions:
+# 
+# For NVIDIA GPU (CUDA 12.x):
+# CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --force-reinstall --no-cache-dir
+#
+# For NVIDIA GPU (CUDA 11.x):
+# CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_COMPILER=/usr/local/cuda-11/bin/nvcc" pip install llama-cpp-python --force-reinstall --no-cache-dir
+#
+# For Apple Silicon (Metal):
+# CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python --force-reinstall --no-cache-dir

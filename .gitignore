@@ -1,6 +1,7 @@
 .venv/
 venv311/
 path/
+llama.cpp/
 
 __pycache__/
 *.pyc
